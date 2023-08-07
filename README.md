@@ -31,11 +31,12 @@
  
  
 ## Approach
->
+> The general approach taken is one of experimentation with the varying of a single parameter or aspect of the network and comparing it to previous runs. The overall goal is to build a relatively accurate gesture recognition model and see how these varying paramters affect performance.
  
  
 ## Results
->
+> With custom architecture using a few skip connects, the best model is capable of a validation accuracy of 85-90%. This model performed similarly to ResNet with 50% of its layers trainable.
 
 
 ## Conclusion
+> Batch Size, the choise of optimizer, the position of normalisation layers, dropouts, pool size and more have significant effects on the performance of any model. Using custom architectures requires rigorous experimentation and evaluation. HOwever, these models are limited solely to the dataset they were trained on and therefore likely will not perform well in real world scenarios. However, transfer learning models are able to give a more than random chance result on the dataset even though theu were not trained on such which goes to show the versatility of established models such as ResNet. While new architectures are necessary in some cases, using and improving upon a pre-built model and architecture provides a good benchmark to test your model AND a fast and easy way to bring a new system to production. 
